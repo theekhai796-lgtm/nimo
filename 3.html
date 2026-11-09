@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8e6c8" />
+    <title>Enter Passkey</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="love-body passcode-body">
+    <main class="passcode-page">
+      <a class="passcode-close" href="2.html#secret" aria-label="Back to your surprise">×</a>
+
+      <div class="passcode-lock" aria-hidden="true">
+        <span class="passcode-lock__ring"></span>
+        <img
+          src="5b7d2868-b834-4d7c-8d3a-40167ef6214f_removalai_preview.png"
+          alt=""
+        />
+      </div>
+
+      <h1>Enter Passkey</h1>
+      <div
+        class="passcode-dots"
+        role="group"
+        aria-label="Passkey digits"
+        aria-live="polite"
+      >
+        <span class="passcode-dot"></span>
+        <span class="passcode-dot"></span>
+        <span class="passcode-dot"></span>
+        <span class="passcode-dot"></span>
+      </div>
+      <p class="passcode-feedback" aria-live="polite"></p>
+
+      <div class="keypad" aria-label="Numeric passkey keypad">
+        <button class="keypad-button" type="button" data-digit="1" aria-label="1">1</button>
+        <button class="keypad-button" type="button" data-digit="2" aria-label="2">2</button>
+        <button class="keypad-button" type="button" data-digit="3" aria-label="3">3</button>
+        <button class="keypad-button" type="button" data-digit="4" aria-label="4">4</button>
+        <button class="keypad-button" type="button" data-digit="5" aria-label="5">5</button>
+        <button class="keypad-button" type="button" data-digit="6" aria-label="6">6</button>
+        <button class="keypad-button" type="button" data-digit="7" aria-label="7">7</button>
+        <button class="keypad-button" type="button" data-digit="8" aria-label="8">8</button>
+        <button class="keypad-button" type="button" data-digit="9" aria-label="9">9</button>
+        <span class="keypad-spacer" aria-hidden="true"></span>
+        <button class="keypad-button" type="button" data-digit="0" aria-label="0">0</button>
+        <button
+          class="keypad-button keypad-button--clear"
+          type="button"
+          data-clear
+          aria-label="Clear passkey"
+        >
+          Clear
+        </button>
+      </div>
+      <p class="passcode-keyboard-hint">You can also type the passkey on your keyboard.</p>
+    </main>
+  </body>
+</html>
